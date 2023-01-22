@@ -45,7 +45,7 @@ const SignupForm = () => {
     };
     try {
       const response = await axios.post(
-        "http://localhost:4000/auth/signup",
+        "https://take-away-backend.vercel.app/auth/signup",
         JSON.stringify(formData),
         {
           headers: {
@@ -86,7 +86,7 @@ const SignupForm = () => {
       console.log(open);
       setOpen(true);
       const response = await axios.post(
-        "http://localhost:4000/auth/verifyOtp",
+        "https://take-away-backend.vercel.app/auth/verifyOtp",
         JSON.stringify(otpVerify),
         {
           headers: {
